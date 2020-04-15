@@ -1,0 +1,20 @@
+@media (max-width: 768px) {
+    .wraper {
+        .test1 {
+            background-color: red;
+            font-size: 100px;
+            border: 2px solid black;
+        }
+
+    }
+   
+}
+@media (max-width: 480px) {
+    .wraper {
+        .test1 {
+            font-size: 40px;
+        }
+
+    }
+   
+}

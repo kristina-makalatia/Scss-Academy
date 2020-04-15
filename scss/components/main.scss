@@ -1,0 +1,48 @@
+.wraper {
+    @include d-flex (flex,space-between,center);
+    @media screen and (max-width: 480px) {
+        @include d-flex (flex,center,center);
+    }
+    @media screen and (max-width: 400px) {
+        @include d-flex (flex,space-between,center);
+    }
+    @extend %size;
+    .test1 {
+        color: $color03;
+        font-size: $size02;
+        padding: $size03;
+        font-family: $font01;
+        @include border (4px,dashed,$color01);
+        @include hover-animation (all,0.2s,ease,0.3s);
+        &:hover {
+            color: $color02;
+        }
+    }
+    .test2 {
+        color: $color01;
+        font-size: $size01;
+        margin: $size04;
+        font-family: 'Baloo Paaji 2', cursive;
+        @include border (2px,solid,blue);
+        // @include hover-animation (all,0.3s,linear,0.2s);
+        transition: all 0.3s linear 0.2s;
+        &:hover {
+            color: $color03;
+        }
+    }
+}
+.box{
+    @include container-size (1170px,100%, 0 auto);
+    @include d-flex(flex,center,center);
+    .test {
+        &:first-child {
+            background-color: green;
+        }
+        &:nth-child(2) {
+            background-color:aqua;
+        }
+    }
+}
+
+
+

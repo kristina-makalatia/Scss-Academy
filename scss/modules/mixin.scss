@@ -1,0 +1,17 @@
+@mixin d-flex ($display,$justify,$align){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin border ($size,$type,$color){
+    border: $size $type $color;
+}
+@mixin hover-animation ($property,$duration,$type,$delay) {
+    transition: $property $duration $type $delay;
+}
+
+@mixin container-size ($size,$width, $center)  {
+    max-width: $size; 
+    width: $width;
+    margin: $center;
+}
